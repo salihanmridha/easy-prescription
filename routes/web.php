@@ -14,5 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return "Hello guyz, I will be back soon!!!";
+    return view("authentication.master");
 });
