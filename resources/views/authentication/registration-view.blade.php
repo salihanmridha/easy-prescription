@@ -1,0 +1,2 @@
+
+<x-authentication.registration />

@@ -1,7 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,9 +11,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/registration', function () {
-    return view("authentication.registration-view");
-});
-Route::get('/login', function () {
-    return view("authentication.login-view");
+Route::prefix('auth')->group(function() {
+    Route::get('/', 'AuthController@index');
 });
